@@ -1,0 +1,5 @@
+/renv/
+.Rprofile
+.Rproj.user
+/.idea/
+CohortDiagnosticsModule.Rproj

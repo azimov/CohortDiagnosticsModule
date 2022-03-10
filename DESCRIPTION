@@ -1,0 +1,43 @@
+Package: CohortDiagnosticsModule
+Type: Package
+Title: An R Package module for the OHDSI CohortDiagnostics package
+Version: 0.1.0
+Date: 2022-03-01
+Authors@R: c(
+  person("Anthony", "Sena", email = "sena@ohdsi.org", role = c("aut", "cre")),
+  person("Observational Health Data Science and Informatics", role = c("cph"))
+  )
+Maintainer: Anthony Sena <sena@ohdsi.org>
+Description: An R package for that provides a module for using the CohortGenerator package to generate cohorts against the OMOP CDM.
+Depends:
+  DatabaseConnector (>= 5.0.0),
+  R (>= 4.0.0)
+Imports:
+  CohortDiagnostics,
+  CirceR,
+  CohortGenerator,
+  dplyr,
+  FeatureExtraction,
+  ParallelLogger (>= 3.0.0),
+  jsonlite,
+  keyring,
+  checkmate
+Suggests:
+  Eunomia,
+  knitr,
+  rmarkdown,
+  testthat,
+  targets
+Remotes:
+  ohdsi/CohortDiagnostics@develop,
+  ohdsi/CohortGenerator,
+  ohdsi/Eunomia,
+  ohdsi/FeatureExtraction,
+  ohdsi/CirceR
+License: Apache License
+VignetteBuilder: knitr
+URL: https://ohdsi.github.io/CohortDiagnosticsModule/, https://github.com/OHDSI/CohortDiagnosticsModule
+BugReports: https://github.com/OHDSI/CohortDiagnosticsModule/issues
+RoxygenNote: 7.1.2
+Encoding: UTF-8
+Language: en-US
